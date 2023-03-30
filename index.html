@@ -1,17 +1,21 @@
+<link rel="stylesheet" type="text/css" href="style.css" />
 <script>
-window.onbeforeunload = function (e) {
+  window.onbeforeunload = function(e) {
     e = e || window.event;
 
     // For IE and Firefox prior to version 4
     if (e) {
-        e.returnValue = 'Sure?';
+      e.returnValue = 'Sure?';
     }
 
     // For Safari
     return 'Sure?';
-};
+  };
+
 </script>
 
 <script type="text/javascript" src="main.js"></script>
 <iframe id="myFrame" src="https://bing.com/" width=width height=height allowfullscreen style="border: 0; width: 100%; height: 100%"></iframe>
-<input type="text" id="URL" name="Box" placeholder="youtube.com"> <input type="submit" id="Submit" onclick="Submit()">
+<input type="text" id="URL" name="Box" placeholder="ex: youtube.com">
+<p id="Sep"></p>
+<input type="submit" id="Submit" onclick="Submit()">
