@@ -1,22 +1,2 @@
-<link rel="stylesheet" type="text/css" href="style.css" />
-<script>
-  window.onbeforeunload = function(e) {
-    e = e || window.event;
 
-    // For IE and Firefox prior to version 4
-    if (e) {
-      e.returnValue = 'Sure?';
-    }
-
-    // For Safari
-    return 'Sure?';
-  };
-
-</script>
-
-<script type="text/javascript" src="main.js"></script>
-<h id="header">✨zach proxy✨</h>
-<iframe id="myFrame" src="https://bing.com/" width=width height=height allowfullscreen style="border: 0; width: 100%; height: 100%"></iframe>
-<input type="text" id="URL" name="Box" placeholder="ex: youtube.com">
-<p id="Sep"></p>
-<input type="submit" id="Submit" onclick="Submit()">
+javascript:void(function(){    var iframe = document.createElement('iframe');    iframe.style.position = 'fixed';    iframe.style.top = '0';    iframe.style.left = '0';    iframe.style.width = '100%';    iframe.style.height = '100%';    iframe.style.border = 'none';        var specifiedWebsite;    do {        specifiedWebsite = prompt("Enter the website URL:");    } while (specifiedWebsite === null);        specifiedWebsite = "https://" + specifiedWebsite;        iframe.src = specifiedWebsite;        document.body.innerHTML = '';    document.body.appendChild(iframe);})();
