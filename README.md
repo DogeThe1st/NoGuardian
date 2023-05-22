@@ -12,4 +12,6 @@ This website will default to using HTTPS, so it may not work for HTTP only sites
 
 # How to get this?
 
-in progress.
+make a new bookmark, and paste this code into it:
+
+javascript:void(function(){    var iframe = document.createElement('iframe');    iframe.style.position = 'fixed';    iframe.style.top = '0';    iframe.style.left = '0';    iframe.style.width = '100%';    iframe.style.height = '100%';    iframe.style.border = 'none';        var specifiedWebsite;    do {        specifiedWebsite = prompt("Enter the website URL:");    } while (specifiedWebsite === null);        specifiedWebsite = "https://" + specifiedWebsite;        iframe.src = specifiedWebsite;        document.body.innerHTML = '';    document.body.appendChild(iframe);})();
